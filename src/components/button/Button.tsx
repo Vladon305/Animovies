@@ -1,16 +1,16 @@
 import React from 'react'
 import styles from './Button.module.scss'
+import {Link} from 'react-router-dom'
 
 type Props = {
   children: React.ReactNode
+  link: string
 }
 
-const Button = ({ children }: Props) => {
+const Button = ({ children, link }: Props) => {
   return (
-    <div className={styles.button}>
-      <div className={styles.button__inner}>
-        <div className={styles.text}>{children}</div>
-      </div>
+    <div className={styles.wrapper}>
+        <Link className={styles.link} to={link}>{children}</Link>
     </div>
   )
 }

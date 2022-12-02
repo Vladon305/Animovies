@@ -3,14 +3,19 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 
 
 //описываем интерфейс нашего хранилища
+interface IButton {
+  title: string,
+  link: string
+}
+
 export interface IState {
-    buttons: string[]
+    buttons: IButton[],
 }
 
 
 //объявляем хранилище, в которое будем складывать и изменять все что нам нужно
 const initialState: IState = {
-    buttons: ['Home', 'Anime', 'Movies', 'Kill the Ads']
+    buttons: [{title: 'Home', link: '/'}, {title: 'Anime', link: '/anime'}, {title: 'Movies', link: '/movies'}, {title: 'Kill the ads', link: '/kill_the_ads'}],
   }
 
 
