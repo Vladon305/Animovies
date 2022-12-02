@@ -1,4 +1,4 @@
-@import '../../index.css';
+@import '../../index.scss';
 
 .button {
   align-items: center;
@@ -18,9 +18,9 @@
 
   .button__inner {
     align-items: center;
-    /* background-color: $ocean-blue-pearl; */
+    background-color: $ocean-blue-pearl;
     border: 2px solid;
-    /* border-color: $white-2; */
+    border-color: $white-2;
     box-shadow: -4px 4px 0px #000000;
     display: flex;
     gap: 10px;
@@ -30,9 +30,9 @@
   }
 
   .text {
-    /* color: $white-2; */
-    /* font-family: $font-family-source_code_pro; */
-    /* font-size: $font-size-m; */
+    color: #ffffff;
+    font-family: $font-family-source_code_pro;
+    font-size: $font-size-m;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 14px;

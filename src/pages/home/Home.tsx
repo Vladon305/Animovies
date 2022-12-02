@@ -7,21 +7,30 @@ import alwaysNewestMoviesAnime1 from '../../assets/always-newest-movies-anime@2x
 import alwaysNewestMoviesAnime2 from '../../assets/always-newest-movies-anime-1@2x.png'
 import alwaysNewestMoviesAnime3 from '../../assets/always-newest-movies-anime-2@2x.png'
 
-import './Home.module.scss'
+import './Home.scss'
 import Button from '../../components/button/Button'
+
+import type { RootState } from '../../store/index'
+import { useSelector, useDispatch } from 'react-redux'
 
 type Props = { buttons: string[] }
 
-function Home({ buttons }: Props) {
+function Home() {
+
+  const stuff = useSelector((state: RootState) => state.movie.buttons)
+  
+  console.log(stuff);
+  
+  
   return (
     <div className="container-center-horizontal">
       <div className="home-desktop screen" style={{ backgroundImage: `url(${Flag})` }}>
         <div className="overlap-group1" style={{ backgroundImage: `url(${overlapGroup1})` }}>
           <div className="navbar_buttons">
-            <Button>{buttons[0]}</Button>
-            <Button>{buttons[1]}</Button>
-            <Button>{buttons[2]}</Button>
-            <Button>{buttons[3]}</Button>
+
+            {stuff.map(item => {
+              return (<Button>{item}</Button>)
+            })}
           </div>
           <div className="overlap-group2">
             <img
