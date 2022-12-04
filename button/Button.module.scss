@@ -1,0 +1,89 @@
+@import '../../index.scss';
+
+// .button {
+//   align-items: center;
+//   border: 1px none;
+//   box-shadow: 0px 4px 22px #ffffff;
+//   cursor: pointer;
+//   display: flex;
+//   height: 50px;
+//   justify-content: center;
+//   padding: 2px;
+//   transition: all 0.2s linear;
+//   width: 82px;
+//   margin-right: 50px;
+
+//   &:hover {
+//     transform: scale(1.1);
+//   }
+
+//   .button__inner {
+//     align-items: center;
+//     background-color: $ocean-blue-pearl;
+//     border: 2px solid;
+//     border-color: $white-2;
+//     box-shadow: -4px 4px 0px #000000;
+//     display: flex;
+//     gap: 10px;
+//     justify-content: center;
+//     padding: 16px 18px;
+//     width: fit-content;
+//   }
+
+//   .text {
+//     color: #ffffff;
+//     font-family: $font-family-source_code_pro;
+//     font-size: $font-size-m;
+//     font-weight: 600;
+//     letter-spacing: 0;
+//     line-height: 14px;
+//     margin-top: -2px;
+//     text-shadow: 0px 4px 4px #00000080;
+//     white-space: nowrap;
+//     width: fit-content;
+//   }
+// }
+
+.link {
+  color: #ffffff;
+  font-family: $font-family-source_code_pro;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 10px 25px;
+}
+
+.wrapper {
+  cursor: pointer;
+  // border: solid 3px rgba(255, 255, 255, 0.675);
+  // background-image: linear-gradient(
+  //     rgba(255, 255, 255, 0),
+  //     rgba(255, 255, 255, 0)
+  //   ),
+  //   linear-gradient(101deg, #44daff, #ff48fa);
+  border: solid 2px rgb(0, 0, 0, 0.108);
+  background: linear-gradient(to right, #00ffa3, #dc1fff);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px rgb(0, 0, 0);
+  border-radius: 0.8rem;
+  display: flex;
+  margin: 20px 20px;
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.488);
+    transition: ease-in-out 0.25s;
+    border-radius: 100%;
+    border: solid 3px rgba(0, 0, 0, 0.108);
+  }
+}
